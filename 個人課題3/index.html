@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-container">
+        <img src="weather_parasol_rain_illust_1087.png" alt="rain" class="bg-icon rain">
+        <img src="kkrn_icon_kumo_1.png" alt="cloud" class="bg-icon cloud">
+        <img src="kkrn_icon_taiyou_1.png" alt="sun" class="bg-icon sun">
+        <img src="weather_snow_yukidaruma_illsut_1089-200x200.png" alt="snow" class="bg-icon snow">
+
+        <div id="search-screen">
+            <h1 class="title">TODAY WEATHER</h1>
+            <div class="selection-box">
+                <h2 class="prompt-text">Select Prefecture</h2>
+                <div class="search-wrapper">
+                    <select id="pref-select">
+                        <option value="">読み込み中...</option>
+                    </select>
+                </div>
+                <button id="search-btn">天気をチェック</button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <div class="location-badge" id="display-location">Location</div>
+            
+            <div class="main-display-card">
+                <div id="weather-icon-large"></div>
+                <div class="weather-info-big">
+                    <span id="temp-val">--</span><span class="unit">°C</span>
+                </div>
+                
+                <div class="sub-info-grid">
+                    <div class="info-item">
+                        <p class="label">Humidity</p>
+                        <p><span id="hum-val">--</span>%</p>
+                    </div>
+                    <div class="info-item">
+                        <p class="label">Wind</p>
+                        <p><span id="wind-val">--</span>m/s</p>
+                    </div>
+                </div>
+            </div>
+            <button id="back-btn">戻る</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
