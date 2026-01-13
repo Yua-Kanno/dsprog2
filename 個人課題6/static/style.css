@@ -1,0 +1,87 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Base ===== */
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #fdf2f8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f172a;
+}
+
+/* ===== App ===== */
+.app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== Card ===== */
+.weather-card {
+  width: 320px;
+  padding: 36px 32px;
+  border-radius: 28px;
+
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.18);
+
+  text-align: center;
+}
+
+/* ===== Text ===== */
+.city {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: #64748b;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 6px 0 14px;
+}
+
+.icon {
+  font-size: 80px;
+  margin: 12px 0;
+}
+
+/* ===== Temperature ===== */
+.temp {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1e40af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.slash {
+  font-size: 24px;
+  color: #94a3b8;
+}
+
+.weather {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #475569;
+}
+
+/* ===== Date ===== */
+.date {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #94a3b8;
+}
